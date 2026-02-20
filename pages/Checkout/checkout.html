@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#">
+                Clothique
+            </a></div>
+
+        <div class="search_box">
+            <select>
+                <option>All Categories</option>
+                <option>Men</option>
+                <option>Women</option>
+                <option>Kids</option>
+                <option>Sweaters</option>
+                <option>Hoodies</option>
+            </select>
+            <input type="search" placeholder="Find your choice of clothing">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+
+        <label for="menu_button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu_button">
+
+
+        <nav>
+            <ul class="navbar_nav">
+                <li>
+                    <a href="../../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="../About/index.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="../Contact/index.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="../Cart/index.html">CART</a>
+                </li>
+                <li>
+                    <a href="../Shop/index.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="../Checkout/checkout.html">CHECKOUT</a>
+                </li>
+                <li>
+                    <a href="../Blog/blog.html">BLOG</a>
+                </li>
+            </ul>
+            <ul class="navigation_mobile">
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-bookmark"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+        <ul class="navigation">
+            <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-bookmark"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="banner_img">
+                <div>
+                    <span><a href="#">Home /</a></span>
+                    <span><a href="#">Pages /</a></span>
+                    <span>Checkout</span>
+                </div>
+                <h1>Checkout</h1>
+            </div>
+        </div>
+
+        <div class="Billing_address_container">
+            <h1>Billing address</h1>
+            <div>
+                <form>
+                    <div class="label-input-container">
+                        <div class="name-1">
+                            <label for="First_name">First name<input type="text" id="First_name"></label>
+                            <label for="Last_name">Last name<input type="text" id="Last_name"></label>
+                        </div>
+                        <div class="username-2">
+                            <label for="Username">Username</label>
+                            <div>
+                                <button>@</button>
+                                <input type="text" id="Username" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="email-3">
+                            <label for="Email_(Optional)">Email (Optional)</label>
+                            <input type="email" id="Email_(Optional)" placeholder="you@example.com">
+                            <label for="Address">Address</label>
+                            <input type="text" id="Address" placeholder="1234 Main St">
+                            <label for="Address_2_(Optional)">Address 2 (Optional)</label>
+                            <input type="text" id="Address_2_(Optional)" placeholder="Apartment or suite">
+                        </div>
+                        <div class="country-4">
+                            <label for="Country">Country<select>
+                                    <option>Choose...</option>
+                                    <option>United States</option>
+                                </select></label>
+                            <label for="State">State<select>
+                                    <option>Choose...</option>
+                                    <option>California</option>
+                                </select></label>
+                            <label for="Zip">Zip<input type="text" id="Zip"></label>
+                        </div>
+                        <div class="checkbox-5">
+                            <div>
+                                <input type="checkbox" id="shipping_address">
+                                <label for="shipping_address">Shipping address is the same as my billing address</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="next_time">
+                                <label for="next_time">Save this information for next time</label>
+                            </div>
+                        </div>
+                        <div class="payment-6">
+                            <h2>Payment</h2>
+                            <div>
+                                <input type="checkbox" id="Credit_card">
+                                <label for="Credit_card">Credit card</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Debit_card">
+                                <label for="Debit_card">Debit card</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="Pay_Pal">
+                                <label for="Pay_Pal">PayPal</label>
+                            </div>
+                        </div>
+                        <div class="nameoncard-7">
+                            <label for="Name_on_card">Name on card<input type="text" id="Name_on_card"><label>Full name
+                                    as
+                                    displayed on card</label></label>
+                            <label for="Credit_card_number">Credit card number<input type="text"
+                                    id="Credit_card_number"></label>
+                        </div>
+                        <div class="expiration-8">
+                            <label for="Expiration">Expiration<input type="text" id="Expiration"></label>
+                            <label for="CVV">CVV<input type="text" id="CVV"></label>
+                        </div>
+                        <button type="submit">Continue to checkout</button>
+                    </div>
+                </form>
+
+                <div class="Your_cart_container">
+                    <div>
+                        <h1>Your cart</h1>
+                        <span id="cart_count"></span>
+                    </div>
+                    <ul id="Cart_payment"></ul>
+                    <label for="promo_code"><input type="text" id="promo_code" placeholder="promo code">
+                        <button>Redeem</button></label>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="Clothique_Container">
+            <div class="Clothique_logo">
+                <h1>Clothique</h1>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-amazon"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="Clothique_text">
+                <h3>Clothique</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Conditions</a></li>
+                    <li><a href="#">Our Journals</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Affiliate Programme</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+
+            <div class="Quick_Links_text">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Discount Coupons</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </div>
+
+            <div class="Customer_Service_text">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Cookie Guidelines</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                </ul>
+            </div>
+
+            <div class="Subscribe_Us_text">
+                <h3>Subscribe Us</h3>
+                <p>Subscribe to our newsletter to get updates about<br>
+                    our grand offers.</p>
+                <div class="input_box">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./checkout.js"></script>
+</body>
+
+</html>

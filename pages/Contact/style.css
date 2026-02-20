@@ -1,0 +1,1085 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: rgb(95, 95, 95);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.search_box {
+    display: flex;
+    border: 1px solid white;
+}
+
+.search_box select {
+    width: 200px;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    color: black;
+}
+
+.search_box input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 300px;
+    color: white;
+}
+
+.search_box button {
+    padding: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+.search_box button i {
+    font-size: 15px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar_nav li {
+    list-style: none;
+}
+
+.navbar_nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#menu_button {
+    display: none;
+}
+
+.navigation_mobile {
+    display: none;
+}
+
+
+.navigation_mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+label {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+.banner_img {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://demo.templatesjungle.com/clothique/images/banner-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 130px;
+}
+
+.banner_img>div {
+    color: gray;
+    font-size: 20px;
+}
+
+.banner_img>span {
+    cursor: pointer;
+}
+
+.banner_img>div a {
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+}
+
+.banner_img>h1 {
+    color: rgb(33, 37, 41);
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.Contact_container {
+    width: 1600px;
+    margin: auto;
+    padding: 130px 0;
+}
+
+.Contact_office_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    line-height: 45px;
+}
+
+.contact_number_box {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.office_Text_Box {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.office_Text_Box .text_p {
+    color: rgb(131, 125, 125);
+}
+
+.office_Text_Box>span>a {
+    color: black;
+}
+
+.office_Text_Box .office_icons ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.office_icons li {
+    width: 43px;
+    height: 43px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.office_icons a {
+    color: black;
+    transition: 0.3s;
+}
+
+.office_icons a:hover {
+    color: white;
+}
+
+.office_icons li:hover {
+    background-color: rgb(30, 29, 29);
+}
+
+.Management_text_Box {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 53px 0;
+}
+
+.Management_text_Box>span>a {
+    color: black;
+}
+
+.get_in_input {
+    width: 700px;
+}
+
+.get_in_input p {
+    color: gray;
+}
+
+.get_input_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.get_input_text input {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: start;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.get_phon_btn {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.get_phon_btn>input {
+    padding: 10px 10px;
+    text-align: start;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 10px 0;
+
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.get_phon_btn textarea {
+    padding: 20px 10px;
+    text-align: start;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 10px 0;
+
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.get_phon_btn button {
+    padding: 15px 10px;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 10px 0;
+    background-color: rgb(130, 142, 171);
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.get_phon_btn button:hover {
+    background-color: #616c85;
+}
+
+.armstrong_map_container {
+    width: 1600px;
+    margin: auto;
+}
+
+.armstrong_map_box {
+    width: 100%;
+    height: 400px;
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(33, 37, 41);
+    cursor: pointer;
+}
+
+.Clothique_Container {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+    overflow: hidden;
+    padding: 140px 0;
+    color: white;
+}
+
+.Clothique_logo>h1 {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.Clothique_logo ul {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.Clothique_logo li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 9px;
+    font-size: 20px;
+    padding: 8px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Clothique_logo a {
+    color: white;
+    transition: 0.3s;
+}
+
+.Clothique_logo li:hover {
+    background-color: white;
+}
+
+.Clothique_logo a:hover {
+    color: black;
+}
+
+.Clothique_Container h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Clothique_Container ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.Clothique_Container li {
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.Clothique_Container a {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Clothique_Container p {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.Subscribe_Us_text>div {
+    display: flex;
+    border: none;
+}
+
+.Subscribe_Us_text .input_box>input {
+    width: 100%;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: start;
+    outline: none;
+    font-size: 20px;
+    border: none;
+}
+
+
+.Subscribe_Us_text .input_box>button {
+    padding: 10px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(117, 131, 159);
+    transition: 0.3s;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.Subscribe_Us_text .input_box>button:hover {
+    background-color: #4a5263;
+}
+
+
+@media(min-width: 1024px) and (max-width: 1300px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        z-index: 99999;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    label {
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+
+    .Contact_container {
+        width: 100%;
+        padding: 60px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Contact_office_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 26px;
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+
+    .contact_number_box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .office_Text_Box .text_p {
+        font-size: 27px;
+    }
+
+    .get_in_input {
+        width: 100%;
+        font-size: 26px;
+    }
+
+    .get_in_input p {
+        font-size: 30px;
+    }
+
+    .get_input_text input {
+        font-size: 23px;
+    }
+
+    .get_phon_btn>input {
+        font-size: 23px;
+    }
+
+    .get_phon_btn textarea {
+        font-size: 23px;
+    }
+
+    .get_phon_btn button {
+        font-size: 40px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    label {
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+
+    .Contact_container {
+        width: 100%;
+        padding: 60px 15px;
+    }
+
+    .Contact_office_box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+
+    .contact_number_box {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Management_text_Box {
+        width: 100%;
+    }
+
+    .office_Text_Box .text_p {
+        font-size: 27px;
+    }
+
+    .get_in_input {
+        width: 100%;
+        font-size: 26px;
+    }
+
+    .get_in_input p {
+        font-size: 30px;
+    }
+
+    .get_input_text input {
+        font-size: 23px;
+    }
+
+    .get_phon_btn>input {
+        font-size: 23px;
+    }
+
+    .get_phon_btn textarea {
+        font-size: 23px;
+    }
+
+    .get_phon_btn button {
+        font-size: 40px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(min-width: 552px) and (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    .banner_img>div {
+        font-size: 22px;
+    }
+
+    .banner_img>h1 {
+        font-size: 50px;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    label {
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+
+    .Contact_container {
+        width: 100%;
+        padding: 60px 15px;
+    }
+
+    .Contact_office_box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 23px;
+        letter-spacing: 1px;
+        line-height: 40px;
+    }
+
+    .contact_number_box {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Management_text_Box {
+        width: 100%;
+    }
+
+    .Management_text_Box>h1 {
+        padding: 20px 0;
+        font-size: 40px;
+    }
+
+    .office_Text_Box .text_p {
+        font-size: 23px;
+        padding: 25px 0;
+    }
+
+    .office_Text_Box>h1 {
+        padding: 25px 0;
+        font-size: 40px;
+    }
+
+    .get_in_input {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .get_in_input>h1 {
+        padding: 20px 0;
+        font-size: 40px;
+    }
+
+    .get_in_input p {
+        font-size: 23px;
+    }
+
+    .get_input_text input {
+        font-size: 17px;
+    }
+
+    .get_phon_btn>input {
+        font-size: 17px;
+    }
+
+    .get_phon_btn textarea {
+        font-size: 17px;
+    }
+
+    .get_phon_btn button {
+        font-size: 30px;
+    }
+
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(max-width: 552px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    .banner_img>div {
+        font-size: 22px;
+    }
+
+    .banner_img>h1 {
+        font-size: 50px;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    label {
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+
+    .Contact_container {
+        width: 100%;
+        padding: 60px 15px;
+    }
+
+    .Contact_office_box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 23px;
+        letter-spacing: 1px;
+        line-height: 40px;
+    }
+
+    .contact_number_box {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Management_text_Box {
+        width: 100%;
+    }
+
+    .Management_text_Box>h1 {
+        padding: 20px 0;
+        font-size: 40px;
+    }
+
+    .office_Text_Box .text_p {
+        font-size: 23px;
+        padding: 25px 0;
+    }
+
+    .office_Text_Box>h1 {
+        padding: 25px 0;
+        font-size: 40px;
+    }
+    .get_input_text {
+    width: 100%;
+    flex-direction: column;
+}
+
+    .get_in_input {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .get_in_input>h1 {
+        padding: 20px 0;
+        font-size: 40px;
+    }
+
+    .get_in_input p {
+        font-size: 23px;
+    }
+
+    .get_input_text input {
+        font-size: 17px;
+    }
+
+    .get_phon_btn>input {
+        font-size: 17px;
+    }
+
+    .get_phon_btn textarea {
+        font-size: 17px;
+    }
+
+    .get_phon_btn button {
+        font-size: 25px;
+    }
+
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    .Clothique_logo {
+        width: 100%;
+    }
+
+    .clothes_text {
+        width: 100%;
+    }
+
+    .Quick_Links_text {
+        width: 100%;
+    }
+}

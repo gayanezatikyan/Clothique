@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#">
+    Clothique
+            </a></div>
+
+        <div class="search_box">
+            <select>
+                <option>All Categories</option>
+                <option>Men</option>
+                <option>Women</option>
+                <option>Kids</option>
+                <option>Sweaters</option>
+                <option>Hoodies</option>
+            </select>
+            <input type="search" placeholder="Find your choice of clothing">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+
+        <label for="menu_button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu_button">
+
+        <nav>
+            <ul class="navbar_nav">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="./pages/About/index.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="./pages/Contact/index.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="./pages/Cart/index.html">CART</a>
+                </li>
+                <li>
+                    <a href="./pages/Shop/index.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="./pages/Checkout/checkout.html">CHECKOUT</a>
+                </li>
+                <li>
+                    <a href="./pages/Blog/blog.html">BLOG</a>
+                </li>
+            </ul>
+            <ul class="navigation_mobile">
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-bookmark"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+        <ul class="navigation">
+            <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-bookmark"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
+
+
+    </header>
+
+    <main>
+        <div class="banner">
+            <h1>Discover<span> The<br>
+                    Latest</span><span>Fashion<br>
+                    Trends</span></h1>
+            <p>Whether you're looking for casual wear, formal attire, or<br>
+                seasonal outfits, we have something for everyone.</p>
+            <button>Start Shopping</button>
+
+            <div class="banner_info">
+                <div>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <div>
+                        <h3>Product Varieties</h3>
+                        <p>Explore a diverse range of clothing<br>
+                            styles, from trendy casual wears.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <div>
+                        <h3>Happy Customers</h3>
+                        <p>Join thousands of satisfied<br>
+                            customers who love shopping with us!</p>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div>
+                        <h3>Free delivery</h3>
+                        <p>Enjoy hassle-free shopping with<br>
+                            our free delivery service!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="Category">
+            <h1>Category</h1>
+            <div>
+                <button>View All</button>
+                <button id="leftBtn"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="rightBtn"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="category_box"></div>
+
+        <div class="product_cantainer">
+            <div class="Product_cantainer_title">
+                <h1>Best Selling Products</h1>
+                <button>View All</button>
+            </div>
+            <div class="product_box"></div>
+        </div>
+
+
+        <div class="Sale_Container">
+            <div class="Sale_first">
+                <h1>Items on SALE</h1>
+                <p>Discounts up to 30%</p>
+                <a href="#">Shop Now</a>
+            </div>
+
+            <div class="Sales_box">
+                <div class="Sale_secound">
+                    <h1>Combo offers</h1>
+                    <p>Discounts up to 50%</p>
+                    <a href="#">Shop Now</a>
+                </div>
+                <div class="Sale_thried">
+                    <h1>Discount Coupons</h1>
+                    <p>Discounts up to 40% </p>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Featured_Products_Container">
+            <div>
+                <h1>Featured products</h1>
+                <div>
+                    <button>View All</button>
+                    <button id="LeftButn"><i class="fa-solid fa-angle-left"></i></button>
+                    <button id="RightButn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="Featured_Products_box"></div>
+        </div>
+
+
+        <div class="first_purchase_container">
+            <div>
+                <h1>Get 25% Discount On<br> Your First Purchase</h1>
+                <p>Just Sign Up & Register it now to become member.</p>
+            </div>
+            <div>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email Address">
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="Parent_product_container">
+            <div>
+                <h1>Popular Products</h1>
+                <div>
+                    <button>View All</button>
+                    <button id="leftbutton"><i class="fa-solid fa-angle-left"></i></button>
+                    <button id="rightbutton"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <div class="Parent_box"></div>
+        </div>
+
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>"In the thousands of years that humans
+                        have been making clothing, they
+                        have created an astonishing array of
+                        styles, many of which have been reconstructed."</p>
+                    <h1>KARLINA BIAS</h1>
+                </div>
+                <div class="swiper-slide">
+                    <p>"In the thousands of years that humans
+                        have been making clothing, they
+                        have created an astonishing array of
+                        styles, many of which have been reconstructed."</p>
+                    <h1>KARLINA BIAS</h1>
+                </div>
+                <div class="swiper-slide">
+                    <p>"In the thousands of years that humans
+                        have been making clothing, they
+                        have created an astonishing array of
+                        styles, many of which have been reconstructed."</p>
+                    <h1>KARLINA BIAS</h1>
+                </div>
+                <div class="swiper-slide">
+                    <p>"In the thousands of years that humans
+                        have been making clothing, they
+                        have created an astonishing array of
+                        styles, many of which have been reconstructed."</p>
+                    <h1>JOHN DOE</h1>
+                </div>
+                <div class="swiper-slide">
+                    <p>"In the thousands of years that humans
+                        have been making clothing, they
+                        have created an astonishing array of
+                        styles, many of which have been reconstructed."</p>
+                    <h1>JOHN DOE</h1>
+                </div>
+                <div class="swiper-slide">
+                    <p>"In the thousands of years that humans
+                        have been making clothing, they
+                        have created an astonishing array of
+                        styles, many of which have been reconstructed."</p>
+                    <h1>JOHN DOE</h1>
+                </div>
+                <div class="swiper-slide">
+                    <p>"In the thousands of years that humans
+                        have been making clothing, they
+                        have created an astonishing array of
+                        styles, many of which have been reconstructed."</p>
+                    <h1>WILLIAM JACK</h1>
+                </div>
+                <div class="swiper-slide">
+                    <p>"In the thousands of years that humans
+                        have been making clothing, they
+                        have created an astonishing array of
+                        styles, many of which have been reconstructed."</p>
+                    <h1>NICHOLAS SHRESTHA</h1>
+                </div>
+                <div class="swiper-slide">
+                    <p>"In the thousands of years that humans
+                        have been making clothing, they
+                        have created an astonishing array of
+                        styles, many of which have been reconstructed."</p>
+                    <h1>NICHOLAS SHRESTHA</h1>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <div class="Recent_Blog_container">
+            <div class="Recent_Blog">
+                <h1>Our Recent Blog</h1>
+                <a href="#"><button>View All</button></a>
+            </div>
+            <div class="blog_box">
+                <div class="Blog-clothes">
+                    <a href="#"><img src="https://demo.templatesjungle.com/clothique/images/post-thumbnail-1.jpg"></a>
+                    <div>
+                        <span>22 Aug 2021</span>
+                        <span>tips & tricks</span>
+                    </div>
+                    <div>
+                        <h1>Top 10 casual look ideas to dress up your kids</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend<br>
+                            viverra enim tincidunt donec quam. A in arcu, hendrerit<br>
+                            neque dolor morbi...</p>
+                    </div>
+                </div>
+
+                <div class="Blog-clothes">
+                    <a href="#"><img src="https://demo.templatesjungle.com/clothique/images/post-thumbnail-2.jpg"></a>
+                    <div>
+                        <span>22 Aug 2021</span>
+                        <span>trending</span>
+                    </div>
+                    <div>
+                        <h1>Latest trends of wearing street wears supremely</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend<br>
+                            viverra enim tincidunt donec quam. A in arcu, hendrerit<br>
+                            neque dolor morbi...</p>
+                    </div>
+                </div>
+
+                <div class="Blog-clothes">
+                    <a href="#"><img src="https://demo.templatesjungle.com/clothique/images/post-thumbnail-3.jpg"></a>
+                    <div>
+                        <span>22 Aug 2021</span>
+                        <span>inspiration</span>
+                    </div>
+                    <div>
+                        <h1>10 Different Types of comfortable clothes ideas for women</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend<br>
+                            viverra enim tincidunt donec quam. A in arcu, hendrerit<br>
+                            neque dolor morbi...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="Clothique_Container">
+            <div class="Clothique_logo">
+                <h1>Clothique</h1>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-amazon"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="Clothique_text">
+                <h3>Clothique</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Conditions</a></li>
+                    <li><a href="#">Our Journals</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Affiliate Programme</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+
+            <div class="Quick_Links_text">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Discount Coupons</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </div>
+
+            <div class="Customer_Service_text">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Cookie Guidelines</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                </ul>
+            </div>
+
+            <div class="Subscribe_Us_text">
+                <h3>Subscribe Us</h3>
+                <p>Subscribe to our newsletter to get updates about<br>
+                    our grand offers.</p>
+                <div class="input_box">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: window.innerWidth <= 768 ? 1 : 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

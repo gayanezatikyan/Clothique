@@ -1,0 +1,2025 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(95, 95, 95);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.search_box {
+    display: flex;
+    border: 1px solid white;
+}
+
+.search_box select {
+    width: 200px;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    color: black;
+}
+
+.search_box input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 300px;
+    color: white;
+}
+
+.search_box button {
+    padding: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+.search_box button i {
+    font-size: 15px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar_nav li {
+    list-style: none;
+}
+
+.navbar_nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    background-image: url(https://demo.templatesjungle.com/clothique/images/banner-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 30px;
+}
+
+.banner h1 {
+    font-size: 70px;
+    color: black;
+    font-weight: 800;
+}
+
+.banner h1 span:first-child {
+    color: rgba(0, 0, 0, 0.837);
+    font-weight: 100;
+    padding: 20px;
+}
+
+.banner h1 span:last-child {
+    color: rgba(0, 0, 0, 0.481);
+}
+
+.banner p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.banner button {
+    cursor: pointer;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgba(10, 9, 9, 0.826);
+    transition: 0.3s;
+}
+
+.banner button:hover {
+    background-color: rgba(50, 41, 41, 0.659);
+}
+
+.banner_info {
+    width: 90%;
+    transform: translateX(5%) translateY(100px);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.banner_info>div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+}
+
+.banner_info>div:nth-child(2) {
+    border-left: 1px solid rgba(0, 0, 0, 0.136);
+    border-right: 1px solid rgba(0, 0, 0, 0.136);
+}
+
+.banner_info>div i {
+
+    font-size: 45px;
+
+}
+
+.banner_info>div>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.Category {
+    width: 1650px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 130px 20px;
+}
+
+.Category>h1 {
+    color: #212529;
+}
+
+.Category button {
+    padding: 10px 20px;
+    background-color: #828EAB;
+    color: white;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Category button:hover {
+    background-color: #616c85;
+}
+
+.category_box {
+    max-width: 1600px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    gap: 15px;
+    white-space: nowrap;
+    margin: auto;
+}
+
+.categoryDiv {
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.categoryDiv img {
+    width: 100%;
+}
+
+
+
+.product_cantainer {
+    width: 1650px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 130px 20px;
+}
+
+.Product_cantainer_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 60px 0;
+}
+
+.Product_cantainer_title>h1 {
+    color: #212529;
+}
+
+.Product_cantainer_title button {
+    padding: 10px 20px;
+    background-color: #828EAB;
+    color: white;
+    transition: 0.3s;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+.product_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.Product {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.Product>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Product>h4 {
+    font-weight: 100;
+}
+
+.Product>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.Product>div span:nth-child(1) {
+    color: #5F5F5F;
+    font-size: 22px;
+}
+
+.Product>div span:nth-child(2) {
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.Product>div span:nth-child(3) {
+    border: 1px solid rgba(33, 37, 41, 0.5);
+    padding: 3px;
+    color: rgba(33, 37, 41, 0.5);
+}
+
+.Product>div button {
+    padding: 13px 17px;
+}
+
+.product_box button:hover {
+    background-color: #616c85;
+}
+
+.Add_to_card,
+#Like_btn {
+    background-color: #828EAB;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.Add_to_card:hover,
+#Like_btn:hover {
+    background-color: #616c85;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.Product:hover #buttons {
+    opacity: 1;
+}
+
+.Add_to_card {
+    width: 250px;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+
+.Sale_Container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.Sale_first {
+    width: 60%;
+    height: 500px;
+    background-image: url(https://demo.templatesjungle.com/clothique/images/banner-ad-1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 60px;
+}
+
+.Sale_first>h1 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.Sale_first>p {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.Sale_first>a {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+}
+
+.Sale_first>a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.4s;
+    left: 0;
+    top: 105%;
+    z-index: 3;
+}
+
+.Sale_first>a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(130, 127, 124);
+    transition: 0.4s;
+    left: 0;
+    top: 105%;
+}
+
+.Sale_first>a:hover::before {
+    width: 100%;
+}
+
+.Sales_box {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Sale_secound {
+    width: 100%;
+    height: 242px;
+    background-image: url(https://demo.templatesjungle.com/clothique/images/banner-ad-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 60px;
+    border: none;
+}
+
+
+
+.Sale_secound>h1 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.Sale_secound>p {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.Sale_secound>a {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+}
+
+.Sale_secound>a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.4s;
+    left: 0;
+    top: 105%;
+    z-index: 3;
+}
+
+.Sale_secound>a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(130, 127, 124);
+    transition: 0.4s;
+    left: 0;
+    top: 105%;
+}
+
+.Sale_secound>a:hover::before {
+    width: 100%;
+}
+
+.Sale_thried {
+    width: 100%;
+    height: 243px;
+    background-image: url(https://demo.templatesjungle.com/clothique/images/banner-ad-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 60px;
+    border: none;
+}
+
+
+.Sale_thried>h1 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.Sale_thried>p {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.Sale_thried>a {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+}
+
+.Sale_thried>a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.4s;
+    left: 0;
+    top: 105%;
+    z-index: 3;
+}
+
+.Sale_thried>a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(130, 127, 124);
+    transition: 0.4s;
+    left: 0;
+    top: 105%;
+}
+
+.Sale_thried>a:hover::before {
+    width: 100%;
+}
+
+
+.Featured_Products_Container {
+    padding: 150px 0;
+}
+
+.Featured_Products_Container>div {
+    width: 1650px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.Featured_Products_Container>div>h1 {
+    color: rgb(33, 37, 41);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.Featured_Products_Container button {
+    padding: 13px 20px;
+    background-color: rgb(130, 142, 171);
+    color: white;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.Featured_Products_Container button:hover {
+    background-color: #616c85;
+}
+
+.Featured_Products_box {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    gap: 15px;
+    white-space: nowrap;
+}
+
+.Featured_Product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.Featured_Product>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Featured_Product>h4 {
+    font-weight: 100;
+}
+
+.Featured_Product>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.Featured_Product>div span:nth-child(1) {
+    color: #5F5F5F;
+    font-size: 22px;
+}
+
+.Featured_Product>div span:nth-child(2) {
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.Featured_Product>div span:nth-child(3) {
+    border: 1px solid rgba(33, 37, 41, 0.5);
+    padding: 3px;
+    color: rgba(33, 37, 41, 0.5);
+}
+
+.Featured_Product #Buttons {
+    padding: 15px 20px;
+}
+
+.Featured_Product #Add_to_cart,
+#Like_Btn {
+    background-color: #828EAB;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#Buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#Add_to_cart:hover,
+#Like_Btn:hover {
+    background-color: #616c85;
+}
+
+.Featured_Product:hover #Buttons {
+    opacity: 1;
+}
+
+#Add_to_cart {
+    width: 250px;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+
+.first_purchase_container {
+    width: 1600px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://demo.templatesjungle.com/clothique/images/banner-newsletter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 50px;
+}
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide p {
+    font-size: 25px;
+    color: rgb(176, 168, 168);
+    line-height: 35px;
+}
+
+.first_purchase_container>div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first_purchase_container>div>h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.first_purchase_container>div>p {
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.first_purchase_container>div>form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.first_purchase_container>div input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    text-align: start;
+    outline: none;
+    font-size: 17px;
+}
+
+.first_purchase_container>div button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: rgb(239, 239, 239);
+    text-align: center;
+    outline: none;
+    background-color: #212529;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.first_purchase_container>div button:hover {
+    background-color: #424649;
+
+}
+
+.Parent_product_container>div {
+    width: 1650px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.Parent_product_container>div>h1 {
+    color: rgb(33, 37, 41);
+    font-weight: 700;
+}
+
+.Parent_product_container button {
+    padding: 13px 20px;
+    background-color: rgb(130, 142, 171);
+    color: white;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.Parent_product_container button:hover {
+    background-color: #616c85;
+}
+
+
+
+
+.Parent_box {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    gap: 15px;
+    white-space: nowrap;
+}
+
+.Parent_product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.Parent_product>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Parent_product>h4 {
+    font-weight: 100;
+}
+
+.Parent_product>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.Parent_product>div span:nth-child(1) {
+    color: #5F5F5F;
+    font-size: 22px;
+}
+
+.Parent_product>div span:nth-child(2) {
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.Parent_product>div span:nth-child(3) {
+    border: 1px solid rgba(33, 37, 41, 0.5);
+    padding: 3px;
+    color: rgba(33, 37, 41, 0.5);
+}
+
+.Parent_product #Buttons {
+    padding: 15px 20px;
+}
+
+.Parent_product .Add_to_cart,
+#Like_Btn {
+    background-color: #828EAB;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#Buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.Add_to_cart {
+    width: 250px;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.Add_to_cart:hover,
+#Like_Btn:hover {
+    background-color: #616c85;
+}
+
+.Parent_product:hover #Buttons {
+    opacity: 1;
+}
+
+.clothes_text_container {
+    padding: 50px 0;
+}
+
+.clothes_text {
+    width: 1650px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 40px 0px;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 45px;
+}
+
+.clothes_text_one>p {
+    color: rgb(95, 95, 95);
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.clothes_text_one>h3 {
+    color: rgb(95, 95, 95);
+    font-size: 30px;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.clothes_text_container button {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(130, 142, 171);
+    color: white;
+    transition: 0.3s;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+
+
+
+.Recent_Blog_container {
+    padding: 50px 0;
+}
+
+.Recent_Blog_container .Recent_Blog {
+    width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.Recent_Blog>h1 {
+    color: #212529;
+    font-weight: 700;
+}
+
+.Recent_Blog button {
+    padding: 10px 22px;
+    background-color: #828EAB;
+    color: white;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.Recent_Blog button:hover {
+    background-color: #616c85;
+}
+
+.blog_box {
+    width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.Blog-clothes {
+    line-height: 40px;
+}
+
+.Blog-clothes>img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Blog-clothes>div>span {
+    padding: 10px;
+    text-transform: uppercase;
+    color: rgb(54, 65, 39);
+}
+
+.Blog-clothes>div>p {
+    color: rgb(95, 95, 95);
+}
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(33, 37, 41);
+    cursor: pointer;
+}
+
+.Clothique_Container {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+    overflow: hidden;
+    padding: 200px 0;
+    color: white;
+}
+
+.Clothique_logo>h1 {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.Clothique_logo ul {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.Clothique_logo li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 9px;
+    font-size: 20px;
+    padding: 8px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Clothique_logo a {
+    color: white;
+    transition: 0.3s;
+}
+
+.Clothique_logo li:hover {
+    background-color: white;
+}
+
+.Clothique_logo a:hover {
+    color: black;
+}
+
+.Clothique_Container h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Clothique_Container ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.Clothique_Container li {
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.Clothique_Container a {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Clothique_Container p {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.Subscribe_Us_text>div {
+    display: flex;
+    border: none;
+}
+
+.Subscribe_Us_text .input_box>input {
+    width: 100%;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: start;
+    outline: none;
+    font-size: 20px;
+    border: none;
+}
+
+
+.Subscribe_Us_text .input_box>button {
+    padding: 10px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(117, 131, 159);
+    transition: 0.3s;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.Subscribe_Us_text .input_box>button:hover {
+    background-color: #4a5263;
+}
+
+
+label {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+#menu_button {
+    display: none;
+}
+
+.navigation_mobile {
+    display: none;
+}
+
+
+.navigation_mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+
+@media(min-width: 1024px) and (max-width: 1300px) {
+    header {
+        padding: 20px;
+        position: relative;
+        z-index: 99999;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .Category {
+        width: 1110px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 130px 20px;
+    }
+
+    .category_box {
+        padding: 40px;
+    }
+
+    .product_cantainer {
+        width: 1110px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 130px 20px;
+    }
+
+    .product_box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .Product>img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Sale_Container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .Sale_first {
+        width: 70%;
+    }
+
+    .Sales_box {
+        width: 60%;
+    }
+
+    .Featured_Products_Container>div {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .first_purchase_container {
+        width: 100%;
+        height: 400px;
+        padding: 10px 70px;
+    }
+
+    .Parent_product_container>div {
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 400px;
+        padding: 0 40px;
+    }
+
+    .Recent_Blog_container .Recent_Blog {
+        width: 100%;
+        padding: 10px 50px;
+    }
+
+    .blog_box {
+        width: 100%;
+        padding: 0 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        z-index: 99999;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .banner_info>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Blog-clothes {
+        width: 80%;
+    }
+
+    .Blog-clothes img {
+        width: 100%;
+    }
+
+    .Category {
+        width: 100%;
+        padding: 130px 20px;
+        font-size: 20px;
+    }
+
+    .Category button {
+        font-size: 20px;
+    }
+
+    .category_box {
+        padding: 40px;
+    }
+
+    .product_cantainer {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 130px 20px;
+    }
+
+    .product_box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .Product>img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Sale_Container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .Sale_first {
+        width: 70%;
+    }
+
+    .Sales_box {
+        width: 60%;
+    }
+
+    .Featured_Products_Container>div {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .first_purchase_container {
+        width: 100%;
+        height: 400px;
+        padding: 10px 70px;
+    }
+
+    .Parent_product_container>div {
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 400px;
+        padding: 0 40px;
+    }
+
+    .Recent_Blog_container .Recent_Blog {
+        width: 100%;
+        padding: 10px 50px;
+    }
+
+    .blog_box {
+        width: 100%;
+        padding: 0 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(min-width: 552px) and (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    .banner_info {
+        width: 100%;
+        transform: translateX(0);
+        flex-wrap: wrap;
+    }
+
+    .Product {
+        width: 80%;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .banner_info>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Blog-clothes {
+        width: 80%;
+    }
+
+    .Blog-clothes img {
+        width: 100%;
+    }
+
+    .Category {
+        width: 100%;
+        padding: 130px 20px;
+        font-size: 20px;
+    }
+
+    .Category button {
+        font-size: 20px;
+    }
+
+    .category_box {
+        padding: 40px;
+    }
+
+    .product_cantainer {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 130px 20px;
+    }
+
+    .product_box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .Product>img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Sale_Container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .Sale_first {
+        width: 100%;
+    }
+
+    .Sales_box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .Featured_Products_Container>div {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .first_purchase_container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 10px 70px;
+    }
+
+    .Parent_product_container>div {
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 400px;
+        padding: 0 40px;
+    }
+
+    .Recent_Blog_container .Recent_Blog {
+        width: 100%;
+        padding: 10px 50px;
+    }
+
+    .blog_box {
+        width: 100%;
+        padding: 0 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 552px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    .Featured_Products_Container button {
+        font-size: 20px;
+        padding: 10px 17px;
+    }
+
+    .first_purchase_container>div>form {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    .banner_info {
+        width: 100%;
+        transform: translateX(0);
+        flex-wrap: wrap;
+    }
+
+    .Product {
+        width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 30px;
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .Featured_Products_Container>div>h1 {
+        font-size: 25px;
+        padding: 15px 0;
+    }
+
+    .Parent_product_container>div>h1 {
+        font-size: 30px;
+    }
+
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .banner_info>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Blog-clothes {
+        width: 100%;
+    }
+
+    .Blog-clothes img {
+        width: 100%;
+    }
+
+    .Category {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 20px;
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    .Category button {
+        font-size: 17px;
+    }
+
+    .Product_cantainer_title>h1 {
+        font-size: 25px;
+        padding: 15px 0;
+    }
+
+    .category_box {
+        padding: 40px;
+    }
+
+    .product_cantainer {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 130px 20px;
+    }
+
+    .product_box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .Product>img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Sale_Container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .Sale_first {
+        width: 100%;
+    }
+
+    .Sales_box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .Featured_Products_Container>div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .first_purchase_container {
+        width: 100%;
+        flex-direction: column;
+        padding: 0 25px;
+    }
+
+    .Parent_product_container>div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 400px;
+        padding: 0 40px;
+    }
+
+    .Recent_Blog_container .Recent_Blog {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 50px;
+    }
+
+    .blog_box {
+        width: 100%;
+        padding: 0 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    .Clothique_logo {
+        width: 100%;
+    }
+
+    .clothes_text {
+        width: 100%;
+    }
+
+    .Quick_Links_text {
+        width: 100%;
+    }
+}

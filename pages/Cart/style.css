@@ -1,0 +1,1127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: rgb(95, 95, 95);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo a {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.search_box {
+    display: flex;
+    border: 1px solid white;
+}
+
+.search_box select {
+    width: 200px;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    color: black;
+}
+
+.search_box input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 300px;
+    color: white;
+}
+
+.search_box button {
+    padding: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+.search_box button i {
+    font-size: 15px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar_nav li {
+    list-style: none;
+}
+
+.navbar_nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+.banner_img {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://demo.templatesjungle.com/clothique/images/banner-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 130px;
+}
+
+.banner_img>div {
+    color: gray;
+    font-size: 20px;
+}
+
+.banner_img>span {
+    cursor: pointer;
+}
+
+.banner_img>div a {
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+}
+
+.banner_img>h1 {
+    color: rgb(33, 37, 41);
+    font-size: 80px;
+    font-weight: 100;
+}
+
+#Detal_product {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 0;
+
+}
+
+#product_list {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: gray;
+    padding: 10px 0;
+}
+
+#product_list thead {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(190, 182, 182);
+}
+
+#product_list tr {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#product_list tr th,
+td {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#product_list img {
+    width: 140px;
+    height: auto;
+}
+
+#product_list h3 {
+    color: rgb(50, 48, 48);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#product_list h3:hover {
+    color: black;
+}
+
+#product_list .product_list_button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgb(233, 228, 228);
+    border-radius: 5px;
+}
+
+#product_list .product_list_button button {
+    min-width: 33px;
+    min-height: 33px;
+    border: none;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+#product_list .product_list_button button:hover {
+    background-color: gray;
+    color: white;
+}
+
+#product_list .product_list_button span {
+    width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.product_list_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.product_list_price span {
+    color: black;
+    font-size: 22px;
+}
+
+.product_list_price button {
+    min-width: 33px;
+    min-height: 33px;
+    font-size: 18px;
+    border: none;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+#product_list #productcount {
+    font-size: 20px;
+}
+
+.cart_total_box {
+    width: 500px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart_total_box>h2 {
+    color: black;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.subtotal_price span {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cart_total_box>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 7px;
+}
+
+.cart_total_box>div>button {
+    width: 100%;
+    padding: 20px 30px;
+    background-color: rgb(33, 37, 41);
+    color: white;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.cart_total_box>div>button:hover {
+    background-color: #424649;
+    ;
+}
+
+.cart_total_box button {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: rgb(130, 142, 171);
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: white;
+}
+
+.cart_total_box button:hover {
+    background-color: rgb(97, 108, 133);
+}
+
+label {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+#menu_button {
+    display: none;
+}
+
+.navigation_mobile {
+    display: none;
+}
+
+
+.navigation_mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(33, 37, 41);
+    cursor: pointer;
+}
+
+.Clothique_Container {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+    overflow: hidden;
+    padding: 200px 0;
+    color: white;
+}
+
+.Clothique_logo>h1 {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.Clothique_logo ul {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.Clothique_logo li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 9px;
+    font-size: 20px;
+    padding: 8px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Clothique_logo a {
+    color: white;
+    transition: 0.3s;
+}
+
+.Clothique_logo li:hover {
+    background-color: white;
+}
+
+.Clothique_logo a:hover {
+    color: black;
+}
+
+.Clothique_Container h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Clothique_Container ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.Clothique_Container li {
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.Clothique_Container a {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Clothique_Container p {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.Subscribe_Us_text>div {
+    display: flex;
+    border: none;
+}
+
+.Subscribe_Us_text .input_box>input {
+    width: 100%;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: start;
+    outline: none;
+    font-size: 20px;
+    border: none;
+}
+
+
+.Subscribe_Us_text .input_box>button {
+    padding: 10px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(117, 131, 159);
+    transition: 0.3s;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.Subscribe_Us_text .input_box>button:hover {
+    background-color: #4a5263;
+}
+
+
+@media(min-width: 1024px) and (max-width: 1300px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        z-index: 99999;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    #Detal_product {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #product_list {
+        width: 100%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #product_list thead {
+        width: 100%;
+    }
+
+    #product_list tr th,
+    td {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    #product_list tr {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #product_list img {
+        width: 170px;
+        height: auto;
+    }
+
+    #product_list h3 {
+        font-size: 24px;
+    }
+
+    #product_list .product_list_button button {
+        min-width: 40px;
+        min-height: 40px;
+        font-size: 27px;
+    }
+
+    .product_list_price {
+        min-width: 42px;
+        min-height: 42px;
+    }
+
+    .product_list_price span {
+        font-size: 27px;
+    }
+
+    .product_list_price button {
+        font-size: 27px;
+    }
+
+    .cart_total_box {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .cart_total_box>h2 {
+        font-size: 40px;
+    }
+
+    .subtotal_price span {
+        font-size: 30px;
+    }
+
+    .cart_total_box>div>button {
+        font-size: 27px;
+    }
+
+    .cart_total_box button {
+        font-size: 27px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    #Detal_product {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    #product_list {
+        width: 100%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #product_list thead {
+        width: 100%;
+    }
+
+    #product_list tr th,
+    td {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    #product_list tr {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #product_list img {
+        width: 137px;
+        height: auto;
+    }
+
+    #product_list h3 {
+        font-size: 22px;
+    }
+
+    #product_list .product_list_button button {
+        min-width: 35px;
+        min-height: 35px;
+        font-size: 22px;
+    }
+
+    .product_list_price {
+        min-width: 38px;
+        min-height: 38px;
+    }
+
+    .product_list_price span {
+        font-size: 27px;
+    }
+
+    .product_list_price button {
+        font-size: 27px;
+    }
+
+    .cart_total_box {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .cart_total_box>h2 {
+        font-size: 35px;
+    }
+
+    .subtotal_price span {
+        font-size: 27px;
+    }
+
+    .cart_total_box>div>button {
+        font-size: 24px;
+    }
+
+    .cart_total_box button {
+        font-size: 24px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(min-width: 552px) and (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    #Detal_product {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    #product_list {
+        width: 100%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #product_list thead {
+        width: 100%;
+    }
+
+    #product_list tr th,
+    td {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        flex-wrap: wrap;
+    }
+
+    #product_list tr {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #product_list img {
+        width: 137px;
+        height: auto;
+    }
+
+    #product_list h3 {
+        font-size: 20px;
+    }
+
+    #product_list .product_list_button button {
+        min-width: 35px;
+        min-height: 35px;
+        font-size: 20px;
+    }
+
+    .product_list_price {
+        min-width: 38px;
+        min-height: 38px;
+    }
+
+    .product_list_price span {
+        font-size: 25px;
+    }
+
+    .product_list_price button {
+        font-size: 25px;
+    }
+
+    .cart_total_box {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .cart_total_box>h2 {
+        font-size: 30px;
+    }
+
+    .subtotal_price span {
+        font-size: 25px;
+    }
+
+    .cart_total_box>div>button {
+        font-size: 25px;
+    }
+
+    .cart_total_box button {
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(max-width: 552px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+        font-size: 20px;
+    }
+
+    #Detal_product {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    #product_list {
+        width: 100%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #product_list thead {
+        width: 100%;
+    }
+
+    #product_list tr th,
+    td {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        flex-wrap: wrap;
+    }
+
+    #product_list tr {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #product_list img {
+        width: 100px;
+        height: auto;
+    }
+
+    #product_list h3 {
+        font-size: 15px;
+    }
+
+    #product_list .product_list_button button {
+        min-width: 30px;
+        min-height: 30px;
+        font-size: 15px;
+    }
+
+    .product_list_price {
+        min-width: 34px;
+        min-height: 34px;
+    }
+
+    .product_list_price span {
+        font-size: 20px;
+    }
+
+    .product_list_price button {
+        font-size: 20px;
+    }
+
+    .cart_total_box {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .cart_total_box>h2 {
+        font-size: 25px;
+    }
+
+    .subtotal_price span {
+        font-size: 20px;
+    }
+
+    .cart_total_box>div>button {
+        font-size: 20px;
+    }
+
+    .cart_total_box button {
+        font-size: 20px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    .Clothique_logo {
+        width: 100%;
+    }
+
+    .clothes_text {
+        width: 100%;
+    }
+
+    .Quick_Links_text {
+        width: 100%;
+    }
+}

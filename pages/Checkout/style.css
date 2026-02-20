@@ -1,0 +1,1723 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: rgb(95, 95, 95);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo a {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+label {
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+
+#menu_button {
+    display: none;
+}
+
+
+.search_box {
+    display: flex;
+    border: 1px solid white;
+}
+
+.search_box select {
+    width: 200px;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    color: black;
+}
+
+.search_box input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 300px;
+    color: white;
+}
+
+.search_box button {
+    padding: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
+.search_box button i {
+    font-size: 15px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar_nav li {
+    list-style: none;
+}
+
+.navbar_nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+.banner_img {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://demo.templatesjungle.com/clothique/images/banner-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 80px;
+}
+
+.banner_img>div {
+    color: gray;
+    font-size: 20px;
+}
+
+.banner_img>span {
+    cursor: pointer;
+}
+
+.banner_img>div a {
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+}
+
+.banner_img>h1 {
+    color: rgb(33, 37, 41);
+    font-size: 80px;
+    font-weight: 100;
+}
+
+
+.Billing_address_container {
+    width: 1700px;
+    margin: auto;
+    padding-top: 130px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Billing_address_container>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+}
+
+.Billing_address_container h1 {
+    color: rgb(33, 37, 41);
+}
+
+.Billing_address_container form {
+    width: 900px;
+}
+
+.label-input-container {
+    width: 900px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label-input-container .name-1 {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
+.label-input-container .name-1 label {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.label-input-container .name-1 input {
+    width: 440px;
+    padding: 10px 20px;
+    text-align: start;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-top: 8px;
+    transition: 0.3s;
+
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.Billing_address_container label,
+input {
+    color: rgb(95, 95, 95);
+    font-size: 17px;
+}
+
+.label-input-container .username-2 {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label-input-container .username-2 div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.label-input-container .username-2 button {
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color: rgb(229, 226, 226);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    color: rgb(95, 95, 95);
+}
+
+.label-input-container .username-2 input {
+    width: 100%;
+    padding: 15px 10px;
+
+}
+
+.label-input-container .username-2 div:focus-within {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.label-input-container .email-3 {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.label-input-container .email-3>input {
+    width: 100%;
+    padding: 15px 10px;
+    text-align: start;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0 7px;
+
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.label-input-container .country-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.label-input-container .country-4 label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-input-container .country-4 label>select {
+
+    width: 100%;
+    padding: 15px 10px;
+    color: rgb(95, 95, 95);
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    &:focus {
+        border: 1px solid black;
+    }
+
+}
+
+.label-input-container .country-4 input {
+    width: 320px;
+    padding: 15px 10px;
+    text-align: start;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    transition: 0.3s;
+
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.label-input-container .checkbox-5 {
+    width: 100%;
+    border-top: 1px solid gray;
+    padding-top: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-input-container .checkbox-5 div {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.label-input-container .checkbox-5 div input {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-input-container .checkbox-5 div label {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.label-input-container .payment-6 {
+    width: 100%;
+    border-top: 1px solid gray;
+    padding-top: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-input-container .payment-6 div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.label-input-container .payment-6 div input {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-input-container .payment-6 div label {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.label-input-container .nameoncard-7 {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
+.label-input-container .nameoncard-7 label {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-input-container .nameoncard-7 input {
+    width: 440px;
+    padding: 15px 10px;
+    text-align: start;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    transition: 0.3s;
+
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.label-input-container .expiration-8 {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
+.label-input-container .expiration-8 label {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-input-container .expiration-8 input {
+    width: 100%;
+    padding: 15px 10px;
+    text-align: start;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    transition: 0.3s;
+
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+.label-input-container button {
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(130, 142, 171);
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.label-input-container button:hover {
+    background-color: rgb(97, 108, 133);
+}
+
+
+.Your_cart_container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Your_cart_container>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.Your_cart_container h1 {
+    font-size: 40px;
+}
+
+#cart_count {
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(95, 95, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Cart_payment {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#Cart_payment>li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#Cart_payment>li h2 {
+    color: rgb(95, 95, 95);
+}
+
+#Cart_payment>li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#Cart_payment>li span {
+    font-size: 30px;
+    color: rgb(95, 95, 95);
+    font-weight: 700;
+}
+
+.Your_cart_container label {
+    width: 100%;
+    border: 1px solid rgb(95, 95, 95);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 8px 13px;
+    border-radius: 5px;
+}
+
+.Your_cart_container input {
+    width: 100%;
+    border: 1px solid rgb(95, 95, 95);
+    color: rgb(95, 95, 95);
+    padding: 8px 13px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 18px;
+
+    &:focus {
+        border: 1px solid rgb(26, 27, 30);
+    }
+}
+
+.Your_cart_container button {
+    padding: 9px 13px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(95, 95, 95);
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(33, 37, 41);
+    cursor: pointer;
+    margin-top: 130px;
+}
+
+.Clothique_Container {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+    overflow: hidden;
+    padding: 200px 0;
+    color: white;
+}
+
+.Clothique_logo>h1 {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.Clothique_logo ul {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.Clothique_logo li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 9px;
+    font-size: 20px;
+    padding: 8px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Clothique_logo a {
+    color: white;
+    transition: 0.3s;
+}
+
+.Clothique_logo li:hover {
+    background-color: white;
+}
+
+.Clothique_logo a:hover {
+    color: black;
+}
+
+.Clothique_Container h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.Clothique_Container ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.Clothique_Container li {
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.Clothique_Container a {
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Clothique_Container p {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 35px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.Subscribe_Us_text>div {
+    display: flex;
+    border: none;
+}
+
+.Subscribe_Us_text .input_box>input {
+    width: 100%;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: start;
+    outline: none;
+    font-size: 20px;
+    border: none;
+}
+
+
+.Subscribe_Us_text .input_box>button {
+    padding: 10px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(117, 131, 159);
+    transition: 0.3s;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.Subscribe_Us_text .input_box>button:hover {
+    background-color: #4a5263;
+}
+
+.navigation_mobile {
+    display: none;
+}
+
+
+@media(min-width: 1024px) and (max-width: 1300px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        z-index: 99999;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+    }
+
+    .Billing_address_container {
+        width: 100%;
+        padding: 50px 15px;
+    }
+
+    .Billing_address_container>h1 {
+        font-size: 45px;
+    }
+
+    .Billing_address_container>div {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .Billing_address_container form {
+        width: 100%;
+    }
+
+    .Billing_address_container label,
+    input {
+        font-size: 25px;
+    }
+
+    .label-input-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .label-input-container .name-1 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .label-input-container .name-1 label {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        font-size: 25px;
+    }
+
+    .label-input-container .name-1 input {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .label-input-container .username-2 {
+        width: 100%;
+    }
+
+    .label-input-container .username-2 button {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .label-input-container .username-2 div {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .label-input-container .email-3>input {
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 25px;
+    }
+
+    .label-input-container .country-4 label {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .label-input-container .country-4 label>select {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .label-input-container .checkbox-5 div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .label-input-container .checkbox-5 div input {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .label-input-container .payment-6>h2 {
+        font-size: 35px;
+    }
+
+    .label-input-container .payment-6 div input {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .label-input-container .nameoncard-7 input {
+        width: 100%;
+    }
+
+    .label-input-container button {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .Your_cart_container {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #Cart_payment>li img {
+        width: 130px;
+        height: 130px;
+    }
+
+    #Cart_payment>li span {
+        font-size: 40px;
+    }
+
+    .Your_cart_container input {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .Your_cart_container button {
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        z-index: 99999;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+    }
+
+    .Billing_address_container {
+        width: 100%;
+        padding: 50px 15px;
+    }
+
+    .Billing_address_container>h1 {
+        font-size: 40px;
+    }
+
+    .Billing_address_container>div {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .Billing_address_container form {
+        width: 100%;
+    }
+
+    .Billing_address_container label,
+    input {
+        font-size: 25px;
+    }
+
+    .label-input-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .label-input-container .name-1 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .label-input-container .name-1 label {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        font-size: 25px;
+    }
+
+    .label-input-container .name-1 input {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .label-input-container .username-2 {
+        width: 100%;
+    }
+
+    .label-input-container .username-2 button {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .label-input-container .username-2 div {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .label-input-container .email-3>input {
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 25px;
+    }
+
+    .label-input-container .country-4 label {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .label-input-container .country-4 label>select {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .label-input-container .checkbox-5 div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .label-input-container .checkbox-5 div input {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .label-input-container .payment-6>h2 {
+        font-size: 35px;
+    }
+
+    .label-input-container .payment-6 div input {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .label-input-container .nameoncard-7 input {
+        width: 100%;
+    }
+
+    .label-input-container button {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .Your_cart_container {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #Cart_payment>li img {
+        width: 130px;
+        height: 130px;
+    }
+
+    #Cart_payment>li span {
+        font-size: 40px;
+    }
+
+    .Your_cart_container input {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .Your_cart_container button {
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(min-width: 552px) and (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 400px;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+    }
+
+    .Billing_address_container {
+        width: 100%;
+        padding: 50px 15px;
+    }
+
+    .Billing_address_container>h1 {
+        font-size: 37px;
+    }
+
+    .Billing_address_container>div {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .Billing_address_container form {
+        width: 100%;
+    }
+
+    .Billing_address_container label,
+    input {
+        font-size: 22px;
+    }
+
+    .label-input-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .label-input-container .name-1 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .label-input-container .name-1 label {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        font-size: 22px;
+    }
+
+    .label-input-container .name-1 input {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .label-input-container .username-2 {
+        width: 100%;
+    }
+
+    .label-input-container .username-2 button {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .label-input-container .username-2 div {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .label-input-container .email-3>input {
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 22px;
+    }
+
+    .label-input-container .country-4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .label-input-container .country-4 input {
+        width: 100%;
+    }
+
+    .label-input-container .nameoncard-7 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .label-input-container .expiration-8 {
+        width: 100%;
+        border-bottom: 1px solid gray;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+
+    .label-input-container .country-4 label {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .label-input-container .country-4 label>select {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .label-input-container .checkbox-5 div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .label-input-container .checkbox-5 div input {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .label-input-container .payment-6>h2 {
+        font-size: 30px;
+    }
+
+    .label-input-container .payment-6 div input {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .label-input-container .nameoncard-7 input {
+        width: 100%;
+    }
+
+    .label-input-container button {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .Your_cart_container {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    #Cart_payment>li img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #Cart_payment>li span {
+        font-size: 30px;
+    }
+
+    .Your_cart_container input {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .Your_cart_container button {
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(max-width: 552px) {
+    header {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        z-index: 99999;
+    }
+
+    .search_box {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column-reverse;
+        top: 100%;
+        right: 0;
+        background-color: rgb(95, 95, 95);
+        padding: 0 20px;
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+        transition: 0.5s;
+        z-index: 999999;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    #menu_button:checked~nav {
+        padding: 20px;
+        height: 450px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation_mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navigation_mobile li {
+        list-style: none;
+    }
+
+    .navigation_mobile a {
+        color: white;
+    }
+    .banner_img>h1 {
+    font-size: 60px;
+}
+
+    .Billing_address_container {
+        width: 100%;
+        padding: 50px 15px;
+    }
+
+    .Billing_address_container>h1 {
+        font-size: 34px;
+    }
+
+    .Billing_address_container>div {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .Billing_address_container form {
+        width: 100%;
+    }
+
+    .Billing_address_container label,
+    input {
+        font-size: 22px;
+    }
+
+    .label-input-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .label-input-container .name-1 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .label-input-container .name-1 label {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        font-size: 22px;
+    }
+
+    .label-input-container .name-1 input {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .label-input-container .username-2 {
+        width: 100%;
+    }
+
+    .label-input-container .username-2 button {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .label-input-container .username-2 div {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .label-input-container .email-3>input {
+        width: 100%;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    .label-input-container .country-4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .label-input-container .country-4 input {
+        width: 100%;
+    }
+
+    .label-input-container .nameoncard-7 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .label-input-container .expiration-8 {
+        width: 100%;
+        border-bottom: 1px solid gray;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+
+    .label-input-container .country-4 label {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .label-input-container .country-4 label>select {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .label-input-container .checkbox-5 div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .label-input-container .checkbox-5 div input {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .label-input-container .payment-6>h2 {
+        font-size: 30px;
+    }
+
+    .label-input-container .payment-6 div input {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .label-input-container .nameoncard-7 input {
+        width: 100%;
+    }
+
+    .label-input-container button {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .Your_cart_container {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .Your_cart_container h1 {
+        font-size: 37px;
+    }
+
+    #Cart_payment>li img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #Cart_payment>li span {
+        font-size: 30px;
+    }
+
+    .Your_cart_container input {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .Your_cart_container button {
+        font-size: 25px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .Clothique_Container {
+        width: 100%;
+        padding: 100px 50px;
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    .Clothique_logo {
+        width: 100%;
+    }
+
+    .clothes_text {
+        width: 100%;
+    }
+
+    .Quick_Links_text {
+        width: 100%;
+    }
+}
